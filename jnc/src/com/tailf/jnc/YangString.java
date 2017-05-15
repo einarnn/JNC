@@ -27,7 +27,7 @@ public class YangString extends YangBaseString {
      */
     @Override
     public boolean canEqual(Object obj) {
-        return obj instanceof YangString || obj instanceof String;
+        return (obj instanceof YangString) || (obj instanceof String);
     }
 
 }
